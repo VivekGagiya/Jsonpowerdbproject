@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Project Management</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    
+<div class="container">
+<h2>Project Management Form using the JPDB API</h2>
+
+<form id="empForm" method="get">
+    
+<div class="form-group">
+<label >Project ID:</label> 
+<input type="text" class="form-control"  id="projectid"
+placeholder="Enter Project ID"  onchange="getEmp()" >
+</div>
+    
+<div class="form-group">
+<label >Project Name:</label>
+<input type="text" class="form-control" id="projectname"
+placeholder="Enter Project Name" >
+</div>
+    
+<div class="form-group">
+<label for="assignedto">Assigned To</label>
+<input type="text" class="form-control" id="assignedto"
+placeholder="Enter Assigned To" >
+</div>
+    
+<div class="form-group">
+<label for="assignmentdate">Assignment Date:</label>
+<input type="date" class="form-control" id="assignmentdate"
+placeholder="Assignment Date" >
+</div>
+    
+ <div class="form-group">
+<label for="deadline">Deadline:</label>
+<input type="date" class="form-control" id="deadline"
+placeholder="Enter Dedaline">
+</div>
+    
+
+   <div class="from-group text-center">
+<button type="button" class="btn btn-lg btn-primary" id="Save"  onclick="saveData()" disabled>Save</button>
+<button type="button" class="btn btn-lg btn-primary" id="change" onclick="changeData()" disabled>Change</button>
+<button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetForm()" disabled>Reset</button>
+    </div>
+</form>
+</div>
+    <script type="text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js" > </script>
+    <script src="index.js"></script>
+</body>
+</html>
